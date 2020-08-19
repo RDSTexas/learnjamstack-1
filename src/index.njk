@@ -4,17 +4,17 @@ layout: base.njk
 ---
 
 <div class="container">
-  <h1>This is a page for you</h1>
+  <h1>This is an EXPERIMENT page for you</h1>
   <div class="vibe">You are great!</div>
   <div class="love">
     ❤️
   </div>
 
   <ul>
-  {% for article in news.articles %}
+  {% for taco in mynews.articles %}
     <li>
-      <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
-      <span>{{ article.source.name }} - <time>{{ article.publishedAt }}</time></span>
+      <h2><a href="{{ taco.url }}">{{ taco.title }}</a></h2>
+      <span>{{ taco.source.name }} - <time>{{ taco.publishedAt }}</time></span>
     </li>
 
   {% endfor %}
